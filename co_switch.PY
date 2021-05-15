@@ -34,8 +34,6 @@ class SimpleL2Switch(app_manager.RyuApp):
 			#src_ip = ip_pkt.src
 			self.handle_IP(event)
 
-
-##########################Section 2#################
 	def handle_ARP(self, event):
 		datapath = event.msg.datapath
 		ofproto = datapath.ofproto
